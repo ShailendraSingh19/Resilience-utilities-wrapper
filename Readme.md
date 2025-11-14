@@ -75,7 +75,6 @@ management:
 
 ## 🚀 5. Usage
 
-``` java
 This method calls an external API and uses Resilience4j annotations to add CircuitBreaker, Retry, and RateLimiter protections.
 
 **What each annotation does:**
@@ -109,8 +108,6 @@ public String rateLimiterFallback(Throwable t) {
 }
 ```
 
-```
-
 ------------------------------------------------------------------------
 
 ## 📊 6. Metrics Endpoints
@@ -137,9 +134,9 @@ Example:
 
 **Circuit Breaker not recording failures?**
 
--   Do not swallow exceptions\
--   Ensure fallback has `Throwable`\
--   Remove try/catch unless rethrowing
+- Do not swallow exceptions
+- Ensure fallback has `Throwable`
+- Remove try/catch unless rethrowing
 
 ------------------------------------------------------------------------
 
@@ -153,9 +150,9 @@ Keep a consistent version:
 
 ## 📝 Summary
 
-1.  Create folder\
-2.  Paste JAR\
-3.  Add dependency\
-4.  Add YAML config\
-5.  Annotate methods\
-6.  Hit actuator endpoints
+1. Create folder
+2. Paste JAR
+3. Add dependency
+4. Add YAML config
+5. Annotate methods
+6. Hit actuator endpoints
