@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+service:
+  b:
+    url: http://localhost:8081/api/b/data
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,circuitbreakers,retries,ratelimiters
+
+  endpoint:
+    health:
+      show-details: always
+
+# resilience4j:
+#   retry:
+#     instances:
+#       serviceBRetry:
+#         max-attempts: 3
+#         wait-duration: 2s

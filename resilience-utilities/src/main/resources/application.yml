@@ -1,0 +1,33 @@
+# # =============================
+# # Wrapper Default Configuration
+# # =============================
+
+# resilience4j:
+#   retry:
+#     instances:
+#       defaultRetry:
+#         max-attempts: 3
+#         wait-duration: 2s
+
+#   circuitbreaker:
+#     instances:
+#       defaultCircuitBreaker:
+#         sliding-window-size: 10
+#         failure-rate-threshold: 50
+#         wait-duration-in-open-state: 30s
+
+#   timelimiter:
+#     instances:
+#       defaultTimeLimiter:
+#         timeout-duration: 5s
+
+#   bulkhead:
+#     thread-pool:
+#       instances:
+#         defaultBulkhead:
+#           core-thread-pool-size: 5
+#           max-thread-pool-size: 10
+#           queue-capacity: 20
+#   endpoint:
+#     health:
+#       show-details: always
